@@ -3300,3 +3300,138 @@ form.contact-form button[type="submit"]:hover {
         max-width: 90%;
     }
 }
+@media (max-width: 640px) {
+
+    /* Make sure image is visible if previously hidden */
+    .hero-image-new {
+      display: block !important;
+      text-align: center;
+    }
+  
+    /* Stack content in one column */
+    .hero-inner {
+      grid-template-columns: 1fr !important;
+      gap: 24px;
+      padding: 0 16px;
+    }
+  
+    /* Center text on mobile */
+    .hero-content-new {
+      text-align: center;
+    }
+  
+    /* Scale down heading/subtitle */
+    .hero-main-text {
+      font-size: 34px;
+    }
+  
+    .hero-subtitle-new {
+      font-size: 16px;
+      margin: 0 auto 18px;
+    }
+  
+    /* Buttons centered */
+    .hero-cta-new {
+      justify-content: center;
+    }
+  
+    /* Smaller image for mobile (browser picks correct size) */
+    .hero-image-new img {
+      max-width: 320px;
+      height: auto;
+    }
+  }
+  /* ===========================
+   FIX PATCH — paste at end
+   =========================== */
+
+/* 1) Dropdown: match your HTML (.dropdown) while keeping .nav-dropdown support */
+.nav-dropdown:hover .dropdown-menu,
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* 2) Mobile nav panel uses white background => make links readable */
+@media (max-width: 768px) {
+  .nav-menu {
+    background-color: rgba(255, 255, 255, 0.98);
+  }
+  .nav-menu a {
+    color: var(--text-dark);
+  }
+  .nav-menu a:hover,
+  .nav-menu a.active {
+    color: var(--primary-color);
+  }
+  .nav-menu a::after {
+    background-color: var(--primary-color);
+  }
+}
+
+/* 3) HERO IMAGE ON MOBILE — Visible, small, centered UNDER text (your choice A)  */
+@media (max-width: 640px) {
+
+  /* make sure it shows even if earlier rules hide it */
+  .hero-image-new {
+    display: block !important;
+    order: 2;                 /* put image after text */
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* center and size it down */
+  .hero-image-new img {
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* text block comes first */
+  .hero-content-new {
+    order: 1;
+    text-align: center;
+  }
+
+  /* single-column layout */
+  .hero-inner {
+    grid-template-columns: 1fr !important;
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  /* polish type scale */
+  .hero-main-text {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+  .hero-subtitle-new {
+    font-size: 16px;
+    max-width: 36ch;
+    margin: 0 auto 18px;
+  }
+  .hero-cta-new { justify-content: center; }
+}
+
+/* 4) Prevent other breakpoints from hiding the hero image */
+@media (max-width: 768px) {
+  .hero-image-new { display: block !important; }
+}
+
+/* 5) Header-on-scroll: ensure it sits under the top bar on small screens */
+@media (max-width: 480px) {
+  .header.scrolled { top: 38px; }
+}
+
+/* 6) Improve focus visibility for accessibility */
+:focus-visible {
+  outline: 3px solid rgba(37,99,235,.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* 7) About City banner: keep your centered content overrides intact */
+.about-city-section.city-bg .container {
+  padding: 0 !important;
+  margin: 0 auto !important;
+  max-width: 900px;
+}
