@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us – Franklin Porta Potty Rentals</title>
   <meta name="description" content="Franklin Porta Potty Rentals provides clean, reliable portable restrooms, luxury trailers, ADA units, and handwashing stations across Franklin, TN and nearby areas." />
-  <link rel="icon" href="/public/favicon.png" type="image/png" />
+  <link rel="icon" type="image/png" href="public/favicon.png">
   <link rel="canonical" href="https://www.example.com/about.html" />
 
   <!-- Open Graph / Twitter -->
@@ -16,10 +16,8 @@
   <meta property="og:url" content="https://www.example.com/about.html" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6;padding-top:130px;color:#1f2937;background:#fff;overflow-x:hidden}img{max-width:100%;height:auto;display:block}.top-bar{background:#2563eb;color:#fff;padding:10px 0;position:fixed;top:0;width:100%;z-index:1001;font-size:14px}.header{background:linear-gradient(135deg,#2563eb 0%,#1e40af 100%);position:fixed;top:38px;width:100%;z-index:1000;box-shadow:0 4px 6px rgba(0,0,0,.1);padding:16px 0}.container{max-width:1200px;margin:0 auto;padding:0 24px}</style>
-  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="styles.css"></noscript>
-  
+  <!-- Using optimized CSS file -->
+  <link rel="stylesheet" href="styles-new.css">
 
   <!-- Schema.org LocalBusiness data -->
   <script type="application/ld+json">
@@ -75,6 +73,16 @@
             <li><a href="ada-porta-potty.html">ADA Accessible</a></li>
             <li><a href="luxury-trailer.html">Luxury Restroom Trailer</a></li>
             <li><a href="handwashing-station.html">Handwashing Station</a></li>
+            <li><a href="construction-site-toilets.html">Construction Site Toilets</a></li>
+            <li><a href="special-event-restrooms.html">Special Event Restrooms</a></li>
+            <li><a href="short-term-rentals.html">Short-Term Rentals</a></li>
+            <li><a href="long-term-rentals.html">Long-Term Rentals</a></li>
+            <li><a href="vip-luxury-porta-potties.html">VIP / Luxury Porta Potties</a></li>
+            <li><a href="festival-porta-potties.html">Festival Porta Potties</a></li>
+            <li><a href="wedding-restrooms.html">Wedding Restrooms</a></li>
+            <li><a href="seasonal-porta-potty-rentals.html">Seasonal Porta Potty Rentals</a></li>
+            <li><a href="industrial-portable-restrooms.html">Industrial Portable Restrooms</a></li>
+            <li><a href="rv-camper-portable-toilets.html">RV / Camper Portable Toilets</a></li>
           </ul>
         </li>
         <li><a href="about.html" class="active" aria-current="page">About</a></li>
@@ -107,12 +115,7 @@
             For over a decade, we’ve served construction sites, street fairs, weddings, and outdoor events across the greater Franklin area. Our
             mission is simple: dependable delivery, spotless cleanliness, and friendly support—whenever and wherever you need it.
           </p>
-          <div class="kpi">
-            <div class="card" aria-label="On-time delivery rate"><strong>98%</strong><br/>On‑time delivery</div>
-            <div class="card" aria-label="Customer satisfaction"><strong>4.9/5</strong><br/>Avg. rating</div>
-            <div class="card" aria-label="Units in service"><strong>500+</strong><br/>Units available</div>
-            <div class="card" aria-label="Support hours"><strong>24/7</strong><br/>Live support</div>
-          </div>
+          <!-- KPI cards removed per request -->
         </div>
       </div>
     </section>
@@ -121,31 +124,45 @@
     <section class="container" aria-labelledby="services-heading" style="padding:20px 0 8px">
       <h2 id="services-heading">What We Offer</h2>
       <div class="grid card-grid" style="margin-top:12px">
-        <article class="card"><h3>Standard Porta Potties</h3><p>Reliable, cost‑effective units ideal for job sites and community events.</p></article>
-        <article class="card"><h3>Deluxe Units</h3><p>Upgraded comfort with ventilation and hand sanitizer dispensers.</p></article>
-        <article class="card"><h3>ADA Accessible</h3><p>Spacious, wheelchair‑friendly units that meet ADA requirements.</p></article>
-        <article class="card"><h3>Luxury Restroom Trailers</h3><p>Climate control, running water, private stalls—great for weddings & VIP areas.</p></article>
-        <article class="card"><h3>Handwashing Stations</h3><p>Freestanding sinks with soap and paper towels for better hygiene.</p></article>
-        <article class="card"><h3>Scheduled Maintenance</h3><p>Routine cleaning, restocking, and pumping to keep everything fresh.</p></article>
+        <article class="card">
+          <h3><a href="standard-porta-potty.html" aria-label="Standard Porta Potties details">Standard Porta Potties</a></h3>
+          <p>Reliable, cost-effective units ideal for job sites and community events. <a class="text-link" href="standard-porta-potty.html" aria-label="Learn more about Standard Porta Potties">Learn more →</a></p>
+        </article>
+
+        <article class="card">
+          <h3><a href="deluxe-porta-potty.html" aria-label="Deluxe Units details">Deluxe Units</a></h3>
+          <p>Upgraded comfort with ventilation and hand sanitizer dispensers. <a class="text-link" href="deluxe-porta-potty.html" aria-label="Learn more about Deluxe Units">Learn more →</a></p>
+        </article>
+
+        <article class="card">
+          <h3><a href="ada-porta-potty.html" aria-label="ADA Accessible details">ADA Accessible</a></h3>
+          <p>Spacious, wheelchair-friendly units that meet ADA requirements. <a class="text-link" href="ada-porta-potty.html" aria-label="Learn more about ADA Accessible units">Learn more →</a></p>
+        </article>
+
+        <article class="card">
+          <h3><a href="luxury-trailer.html" aria-label="Luxury Restroom Trailers details">Luxury Restroom Trailers</a></h3>
+          <p>Climate control, running water, private stalls—great for weddings &amp; VIP areas. <a class="text-link" href="luxury-trailer.html" aria-label="Learn more about Luxury Restroom Trailers">Learn more →</a></p>
+        </article>
+
+        <article class="card">
+          <h3><a href="handwashing-station.html" aria-label="Handwashing Stations details">Handwashing Stations</a></h3>
+          <p>Freestanding sinks with soap and paper towels for better hygiene. <a class="text-link" href="handwashing-station.html" aria-label="Learn more about Handwashing Stations">Learn more →</a></p>
+        </article>
+
+        <article class="card">
+          <h3><a href="rentals.html#maintenance" aria-label="Scheduled Maintenance details">Scheduled Maintenance</a></h3>
+          <p>Routine cleaning, restocking, and pumping to keep everything fresh. <a class="text-link" href="rentals.html#maintenance" aria-label="Learn more about Scheduled Maintenance">Learn more →</a></p>
+        </article>
       </div>
     </section>
 
-    <!-- Reasons -->
-    <section class="container" aria-labelledby="why-heading" style="padding:20px 0 8px">
-      <h2 id="why-heading">Why Choose Us</h2>
-      <div class="grid card-grid" style="margin-top:12px">
-        <article class="card"><h3>Fast Delivery</h3><p>Same‑day & next‑day options throughout Franklin and surrounding areas.</p></article>
-        <article class="card"><h3>Clean & Sanitized</h3><p>Every unit is cleaned, disinfected, and inspected before delivery.</p></article>
-        <article class="card"><h3>Transparent Pricing</h3><p>Clear rates with no hidden fees or surprise add‑ons.</p></article>
-        <article class="card"><h3>24/7 Support</h3><p>Friendly, local team available around the clock by phone or email.</p></article>
-      </div>
-    </section>
+    <!-- Reasons section removed per request -->
 
     <!-- CTA -->
     <section class="cta-section">
       <div class="container cta" aria-labelledby="cta-heading">
         <h2 id="cta-heading" style="margin:0">Ready to Get a Quote?</h2>
-        <a class="btn primary" href="tel:+16155550123">Call (615) 555‑0123</a>
+        <a class="btn primary" href="tel:+16155550123">Call (615) 555-0123</a>
         <a class="btn" href="/contact.html">Request a Quote</a>
       </div>
     </section>
@@ -164,7 +181,7 @@
           <h3>Quick Links</h3>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html" aria-current="page">About Us</a></li>
             <li><a href="rentals.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -175,7 +192,7 @@
           <ul>
             <li>📍 123 Main Street, Franklin, TN 37064</li>
             <li>📞 <a href="tel:6155550123">(615) 555-0123</a></li>
-            <li>✉️ info@franklinportapotty.com</li>
+            <li>✉️ <a href="mailto:info@franklinportapotty.com">info@franklinportapotty.com</a></li>
             <li>🕒 Mon-Sun: 6:00 AM - 8:00 PM</li>
           </ul>
         </div>
@@ -187,6 +204,6 @@
     </div>
   </footer>
 
-  <script type="module" src="/main.js"></script>
+  <script src="main-new.js" defer></script>
 </body>
 </html>
